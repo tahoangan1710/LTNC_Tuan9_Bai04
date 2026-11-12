@@ -7,3 +7,4 @@ bank_system\Transaction.class
 bank_system\BankException.class
 bank_system\Bank.class
 bank_system\CheckingAccount.class
+bank_system\FilePathHelper.class
