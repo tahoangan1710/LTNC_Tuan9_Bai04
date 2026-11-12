@@ -1,12 +1,18 @@
 
 package bank_system;
 
+import org.junit.Test;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import static org.junit.Assert.assertEquals;
 
-public class FilePathHelper {
+public class FilePathTest {
 
-    public static Path createPath(String folder, String fileName) {
-        return Paths.get(folder, fileName);
+    @Test
+    public void testFilePath() {
+        Path expected = Paths.get("data", "test.txt");
+        Path actual = FilePathHelper.createPath("data", "test.txt");
+
+        assertEquals(expected, actual);
     }
 }
